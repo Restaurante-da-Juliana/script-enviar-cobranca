@@ -8,11 +8,12 @@ def process():
         name = row["customer_name"]
         phone_number = row["phone_number"]
         amount = row["amount_due"]
-        payment_link = row['payment_link']
+        date = row['date']
+        description = row['description']
 
         print(f"Gerando cobrança para {name} ({phone_number})...")
 
-        open_whatsapp(phone_number, amount, payment_link)
+        open_whatsapp(phone_number, amount, description, name, date)
 
         if idx < len(df) - 1:
             input("\n⏸️  Pressione ENTER para continuar para o próximo contato...\n")
