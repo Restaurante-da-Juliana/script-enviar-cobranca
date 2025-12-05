@@ -1,6 +1,6 @@
 import pandas as pd
-from config import EXCEL_PATH
+from config import EXCEL_URL
 
 def loading_sheet():
-    df = pd.read_excel(EXCEL_PATH)
+    df = pd.read_excel(EXCEL_URL)
     return df

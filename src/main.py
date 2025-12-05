@@ -15,9 +15,6 @@ def process():
 
         open_whatsapp(phone_number, amount, description, name, date)
 
-        if idx < len(df) - 1:
-            input("\n⏸️  Pressione ENTER para continuar para o próximo contato...\n")
-
     print("Processo concluído!")
 
 if __name__ == "__main__":

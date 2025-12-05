@@ -1,4 +1,9 @@
-EXCEL_PATH = "data/customers.xlsx"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+EXCEL_URL = os.getenv("EXCEL_URL")
 
 MESSAGE_TEMPLATE = (
     "Olá {name}, tudo bem?\n"
