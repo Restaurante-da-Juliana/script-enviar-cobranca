@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-EXCEL_URL = os.getenv("EXCEL_URL")
+# EXCEL_URL = os.getenv("EXCEL_URL") # Moved to dynamic loading
 
 MESSAGE_TEMPLATE = (
     "Olá {name}, tudo bem?\n"
